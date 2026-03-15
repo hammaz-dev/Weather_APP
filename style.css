@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 14px;
+    color: #fff;
+}
+
+.box h3 {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.search-row {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+#cityInput {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+}
+
+#cityInput::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#searchBtn {
+    padding: 6px 14px;
+    background: #e8612a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#searchBtn:hover {
+    background: #c9501f;
+}
+
+#history {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#history button {
+    background: #e8612a;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+#history button:hover {
+    background: #c9501f;
+}
+
+#weatherResult {
+    font-size: 13px;
+    color: #fff;
+    min-height: 90px;
+}
+
+#weatherResult p {
+    padding: 6px 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.console-box {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 14px;
+    max-width: 800px;
+    margin: 14px auto 0;
+}
+
+.console-box h3 {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+#consoleLogs {
+    background: #1e1e1e;
+    color: #ccc;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    padding: 10px;
+    min-height: 80px;
+    border-radius: 4px;
+    line-height: 1.8;
+}
